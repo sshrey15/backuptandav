@@ -1,0 +1,252 @@
+html{
+    overflow-x: hidden;
+                                                
+}
+
+
+
+
+body{
+    margin: 0;
+    width: 100%;
+    /* overflow: hidden; */
+    
+    scroll-behavior: smooth;
+    position: sticky;
+}
+
+/* NAV */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    margin: 0;
+    justify-content: end;
+    align-items: center;
+    font-size: larger;
+    image-resolution: 20px;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+    /* padding: 10px; */
+
+    color: #6E7DFF;
+}
+
+.gec{
+    padding-right: 65vh;
+
+}
+
+
+.right{  
+   display: flex;
+   padding-right: 90px;
+}
+
+.text{
+    padding-right: 80vh;
+    
+}
+
+
+
+
+
+.yellow{
+    background-color: #091428;
+}
+
+
+/*HOME*/
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    
+    
+}
+
+.tandav{
+    font-family: 'bitling ravish', sans-serif;
+    font-size:  20vh;
+    color: white;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+
+
+.home{
+    background-color: #091428;
+    background-image: url(assets/shiv.svg),url("assets/moutains.svg"),url("assets/circle.svg");
+    background-repeat: no-repeat;
+    background-position: bottom,
+                         bottom,
+                         center;
+    background-size: 60vh,300vh, 70vh;
+    animation:floatshv 5s ease-in-out infinite ;
+    
+    
+}
+
+
+
+
+@keyframes floatshv{
+
+    0%{
+        
+        background-position-y: bottom,bottom,center;
+        
+        
+        
+    }
+    50%{
+        background-position-y:   center, bottom,center;
+        
+    }
+   
+}
+
+
+
+
+
+/* ABOUT */ 
+
+.flex2{
+    display: flex;
+
+    background-color: #091428;
+    font-size: 10vh;
+    color: white;
+
+    padding-left: 10vw;
+    
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    color: white;
+    padding-right: 10vw;
+    padding-left: 10vw;
+
+    /* padding-top: 0; */
+    /* padding-bottom: ; */
+
+}
+
+
+.about{
+    font-family: 'bitling ravish', sans-serif ;
+
+}
+    
+    
+
+
+.blue{
+    background-color: #091428;
+}
+
+/*CARSUSAL*/
+
+.carousel slide{
+    size: 20px;
+}
+
+
+
+
+
+/*SCHEDULE*/
+
+
+.heading2{
+    /* display: block; */
+    text-align: center;
+    background-color: #091428;
+    
+
+}
+
+.schedule{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+   
+    padding-bottom: 10vh;
+    padding-left: 17.5vw;
+    padding-right: 10vw;
+    background-color: #091428;
+    color: white;
+
+    /* background-image: url("planet2.png");
+    background-repeat: no-repeat;
+    background-position:right; */
+
+}
+
+.h1{
+    padding-top: 5vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'bitling ravish', sans-serif ;
+
+}
+
+.green{
+    background-color: #091428;
+}
+
+.list{
+    color: white;
+}
+
+
+.custom-shape-divider-bottom-1678196200 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1678196200 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1678196200 .shape-fill {
+    fill: #1645AF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
