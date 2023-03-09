@@ -17,6 +17,8 @@ body{
 
 /* NAV */
 
+
+
 .sticky{
     position: fixed;
     top: 0;
@@ -38,6 +40,13 @@ li{
     /* padding: 10px; */
 
     color: #6E7DFF;
+}
+
+a{
+    text-decoration: none;
+    color: #6E7DFF;
+    /* font-family: 'Urbanist'; */
+    font-family: 'Roboto', sans-serif;
 }
 
 .gec{
@@ -65,10 +74,11 @@ li{
 }
 
 
-/*HOME*/
+/*HOME css*/
 
 .container{
     display: flex;
+    
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -76,48 +86,128 @@ li{
     
     
 }
-
 .tandav{
     font-family: 'bitling ravish', sans-serif;
     font-size:  20vh;
     color: white;
     text-align: left;
     text-transform: lowercase;
+    position: absolute;
+    top: 50vh;   
 }
+
+.float{
+    position: absolute;
+    animation: float 2s ease-in-out infinite ;
+
+    
+}
+
+@keyframes float{
+    50%{
+        transform: translateY(40px);
+    }
+    
+}
+
+.float img{
+    height: 90vh;
+    width: auto;
+}
+
 
 
 
 .home{
     background-color: #091428;
-    background-image: url(assets/shiv.svg),url("assets/moutains.svg"),url("assets/circle.svg");
+     /* /* background-image: url("assets/shiv.svg"),url("assets/moutains.svg"),url("assets/circle.svg"); */
+     background-image: url("assets/moutains.svg");
     background-repeat: no-repeat;
-    background-position: bottom,
-                         bottom,
-                         center;
-    background-size: 60vh,300vh, 70vh;
-    animation:floatshv 5s ease-in-out infinite ;
-    
-    
+    background-position: 
+                         bottom;
+                        
+    background-size: 290vh;
+    animation:floatshv 5s ease-in-out infinite ;   
 }
 
 
-
-
-@keyframes floatshv{
+/* @keyframes floatshv{
 
     0%{
         
         background-position-y: bottom,bottom,center;
+        transform: rotate(0deg),rotate(0deg),rotate(0deg);
+        
+       
+        
+        
         
         
         
     }
     50%{
         background-position-y:   center, bottom,center;
+        transform: rotate(0deg),rotate(0deg),rotate(360deg);
         
     }
    
+} */
+
+.rotate{
+   position: absolute;
+   top: 70px;
+  
+  
+  /* margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+  
+  /* background-image: url(assets/circle.svg);
+  background-repeat: no-repeat;
+  background-size: 60vh; */
+  animation: rotate 5s linear infinite; 
+
+ 
+
+    
 }
+.rotate img{
+    height: 65vh;
+    width: auto;
+    
+    
+
+    
+
+    
+   
+
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        
+        transform: rotate(360deg);
+       
+    }
+}
+
+/* .to-rotate::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(assets/circle.svg) ;
+    background-repeat: no-repeat;
+
+} */
+
 
 
 
@@ -175,13 +265,6 @@ li{
 /*SCHEDULE*/
 
 
-.heading2{
-    /* display: block; */
-    text-align: center;
-    background-color: #091428;
-    
-
-}
 
 .schedule{
     display: grid;
@@ -200,10 +283,17 @@ li{
 }
 
 .h1{
-    padding-top: 5vh;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'bitling ravish', sans-serif ;
+font-family: 'bitling ravish', sans-serif ; ;
+
+}
+
+.flex3{
+    display: flex;
+
+    background-color: #091428;
+    font-size: 10vh;
+    color: white;
+    padding-left: 10vw;
 
 }
 
