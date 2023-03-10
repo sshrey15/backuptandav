@@ -15,7 +15,7 @@ body{
     position: sticky;
 }
 
-/* NAV */
+/*********************************************NAV CSS******************************************************************/
 
 
 
@@ -74,7 +74,7 @@ a{
 }
 
 
-/*HOME css*/
+/***************************************************HOME CSS*************************************************************/
 
 .container{
     display: flex;
@@ -86,37 +86,6 @@ a{
     
 
 }
-.tandav{
-    font-family: 'bitling ravish', sans-serif;
-    font-size:  20vh;
-    color: white;
-    text-align: left;
-    text-transform: lowercase;
-    position: absolute;
-    top: 50vh;   
-}
-
-.float{
-    position: absolute;
-    animation: float 2s ease-in-out infinite ;
-
-    
-}
-
-@keyframes float{
-    50%{
-        transform: translateY(40px);
-    }
-    
-}
-
-.float img{
-    height: 90vh;
-    width: auto;
-}
-
-
-
 
 .home{
     background-color: #091428;
@@ -127,8 +96,52 @@ a{
                          bottom;
                         
     background-size: 290vh;
-    animation:floatshv 5s ease-in-out infinite ;   
+    /* animation:floatshv 9s ease-in-out infinite ;    */
 }
+
+.tandav{
+    /* font-family: 'bitling ravish', sans-serif; */
+    /* font-size:  20vh; */
+    /* color: white;
+    text-align: left;
+    text-transform: lowercase; */
+    position: absolute;
+    /* top: 50vh;    */
+    
+
+}
+
+.tandav img{
+    width: 50vw;
+    height: 20vh;
+    
+}
+
+.float{
+    position: absolute;
+    
+    animation: float 2s ease-in-out infinite ;
+
+    
+}
+
+@keyframes float{
+    50%{
+        transform: translateY(15px);
+    }
+    
+}
+
+.float img{
+    height: 80vh;
+    width: auto;
+    
+}
+
+
+
+
+
 
 
 /* @keyframes floatshv{
@@ -155,6 +168,7 @@ a{
 
 .rotate{
    position: absolute;
+   
    top: 70px;
   
   
@@ -166,14 +180,14 @@ a{
   /* background-image: url(assets/circle.svg);
   background-repeat: no-repeat;
   background-size: 60vh; */
-  animation: rotate 4s linear infinite; 
+  animation: rotate 9s linear infinite; 
 
  
 
     
 }
 .rotate img{
-    height: 65vh;
+    height: 50vh;
     width: auto;
     
     
@@ -213,7 +227,7 @@ a{
 
 
 
-/* ABOUT */ 
+/******************************************************* ABOUT CSS********************************************************* */ 
 
 .flex2{
     display: flex;
@@ -262,7 +276,7 @@ a{
 
 
 
-/*SCHEDULE*/
+/******************************************************SCHEDULE CSS***********************************************************/
 
 
 
@@ -282,12 +296,12 @@ a{
 
 }
 
-.h1{
-font-family: 'bitling ravish', sans-serif ; ;
+.scheduleh1{
+font-family: 'bitling ravish', sans-serif ; 
 
 }
 
-.flex3{
+.schedulehead{
     display: flex;
 
     background-color: #091428;
@@ -306,7 +320,7 @@ font-family: 'bitling ravish', sans-serif ; ;
 }
 
 
-.custom-shape-divider-bottom-1678196200 {
+/* .custom-shape-divider-bottom-1678196200 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -325,8 +339,37 @@ font-family: 'bitling ravish', sans-serif ; ;
 
 .custom-shape-divider-bottom-1678196200 .shape-fill {
     fill: #1645AF;
+} */
+
+/*******************************************************EVENTS CSS*****************************************************************/
+
+
+.events{
+    display: flex;
+
+    
+    
+
+    background-color: #091428;
+    font-size: 10vh;
+    color: white;
+    background-image: url(assets/Vector\ 2.png);
+    
+
 }
 
+.eventsh1{
+
+    
+    padding-left: 20vw;
+    display: block;
+    align-items: center;
+    justify-content:  center;  
+    
+
+    font-family: 'bitling ravish', sans-serif ; 
+    
+}
 
 
 
