@@ -1,5 +1,8 @@
 html{
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
                                                 
 }
 
@@ -12,7 +15,7 @@ body{
     /* overflow: hidden; */
     
     scroll-behavior: smooth;
-    position: sticky;
+    
 }
 
 /*********************************************NAV CSS******************************************************************/
@@ -20,13 +23,14 @@ body{
 
 
 .sticky{
-    position: fixed;
+    position:fixed;
     top: 0;
     width: 100%;
 }
 
 .flex{
     display: flex;
+    
     margin: 0;
     justify-content: end;
     align-items: center;
@@ -79,15 +83,20 @@ a{
 .container{
     display: flex;
     
+    
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100vw;
     
+    
 
 }
 
 .home{
+
+    
+    
     background-color: #091428;
      /* /* background-image: url("assets/shiv.svg"),url("assets/moutains.svg"),url("assets/circle.svg"); */
      background-image: url("assets/moutains.svg");
@@ -98,6 +107,8 @@ a{
     background-size: 290vh;
     /* animation:floatshv 9s ease-in-out infinite ;    */
 }
+
+
 
 .tandav{
     /* font-family: 'bitling ravish', sans-serif; */
@@ -112,13 +123,15 @@ a{
 }
 
 .tandav img{
-    width: 50vw;
+    width: 45vw;
     height: 20vh;
     
 }
 
 .float{
     position: absolute;
+    
+
     
     animation: float 2s ease-in-out infinite ;
 
@@ -231,6 +244,7 @@ a{
 
 .flex2{
     display: flex;
+
 
     background-color: #091428;
     font-size: 10vh;
@@ -370,6 +384,11 @@ font-family: 'bitling ravish', sans-serif ;
     font-family: 'bitling ravish', sans-serif ; 
     
 }
+
+
+/************************************************MOBILE CSS****************************************************************/
+
+
 
 
 
